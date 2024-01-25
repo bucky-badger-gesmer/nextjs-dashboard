@@ -11,6 +11,21 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 
+// export async function fetchNba() {
+//   try {
+//     console.log('getting playerIndex...');
+
+//     const data = await fetch(
+//       'https://stats.nba.com/stats/playerindex?College=&Country=&DraftPick=&DraftRound=&DraftYear=&Height=&Historical=1&LeagueID=00&Season=2023-24&SeasonType=Regular%20Season&TeamID=0&Weight=',
+//     );
+
+//     console.log('dataaaa', data);
+//   } catch (error) {
+//     console.error('NBA Stats API Error', error);
+//     throw new Error('Failed to fetch NBA playerIndex data.');
+//   }
+// }
+
 export async function fetchRevenue() {
   // Add noStore() here to prevent the response from being cached.
   // This is equivalent to in fetch(..., {cache: 'no-store'}).
